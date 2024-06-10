@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  max-width: 100%;
+  box-shadow: 0px 0px 8px 0px #828181;
+}
+.navbar-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 67.8%;
+  padding: 1rem 0;
+  gap: 53%;
+}
+.navbar-items > h3 {
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile > h4 {
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+.profile > img {
+  width: 1.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-container {
+  max-width: 67.8%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.4%;
+  margin: 1.3rem auto;
+}
+
+.about-movie {
+  display: flex;
+  flex-direction: column;
+  width: 74.5%;
+}
+.about-movie>img{
+    cursor: pointer;
+}
+.about-movie > h4 {
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  font-size: 1.45rem;
+  margin: 1.3rem 0 0.7rem;
+}
+.about-movie > p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.horizontal-line {
+  border: none;
+  border-top: 1px solid #CCC;
+  margin: 1.5rem 0;
+}
+
+.comment-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5%;
+  margin: 1rem auto;
+}
+.comments-container>h3{
+  font-weight: 500;
+  letter-spacing: 0.9px;
+}
+.comment-section > img {
+  border-radius: 50%;
+  width: 3rem;
+}
+
+.name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.comment > p {
+  margin-top: 0.6rem;
+  font-weight: 300;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+.upcoming-projects-division {
+  display: none;
+}
+.upcoming-projects {
+  max-width: 23.1%;
+}
+.upcoming-projects > h3 {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+}
+.posters {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.86rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.5rem;
+
+  padding-bottom: 1.5rem;
+  background-color: #222222;
+  color: #FFF;
+  gap: 55.5%;
+}
+.footer > h5 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.footer > h5 > span {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.message{
+    cursor: pointer;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 1.2rem;
+    background-color: #C432AE;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-items {
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    gap: 0%;
+    justify-content: space-between;
+  }
+  .profile > h4 {
+    display: none;
+  }
+  .main-container {
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    justify-content: center;
+    margin: 1.3rem auto;
+  }
+  .about-movie {
+    width: 100%;
+  }
+  .comment-section {
+    margin: 1rem auto 0;
+  }
+  .upcoming-projects-division {
+    display: block;
+    border: none;
+    border-top: 1px solid #CCC; 
+    margin: 1.5rem 0; 
+  }
+  .upcoming-projects {
+    max-width: 100%;
+  }
+  .upcoming-projects > .posters > img {
+    max-width: 100%;
+  }
+  .posters:last-child{
+    margin-bottom: 1rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  #footer-title {
+    font-size: 1.5rem;
+  }
+  .message{
+    cursor: pointer;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    color: #FFF;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    padding: 1.2rem;
+    background-color: #C432AE;
+}
+}
